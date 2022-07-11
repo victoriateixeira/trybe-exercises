@@ -3,3 +3,6 @@ Bash
 Git
 JavaScript
 React
+HTML
+CSS
+
