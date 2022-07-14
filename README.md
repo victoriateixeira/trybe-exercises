@@ -1,6 +1,6 @@
 # Trybe
 
-This repository contains all the learning activities developed by _ [[Victoria Teixeira] (https://www.linkedin.com/in/victoriafteixeira/?locale=en_US) _ while studying at [Trybe] (https://www.betrybe.com/): rocket:
+This repository contains all the learning activities developed by _[Victoria Teixeira] (https://www.linkedin.com/in/victoriafteixeira/?locale=en_US)_ while studying at _[Trybe] (https://www.betrybe.com/)_: rocket:
 
 _ "Trybe is a school of the future for anyone who wants to improve their life and build a successful career in technology, where the person only pays when they get a good job." _
 
