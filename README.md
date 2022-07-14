@@ -10,18 +10,18 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 ##### Block 1: Introduction - Unix & Shell
 
-- [] 1-3: _Unix & Shell- Part 1_
-- [] 1-4: _Unix & Shell- Part 2_
+- [x] 1-3: _Unix & Shell- Part 1_
+- [x] 1-4: _Unix & Shell- Part 2_
 
 ##### Block 2: Git & GitHub
 
-- [] 2-1: _What is it and what is it for? _
-- [] 2-2: _Understanding Commands_
-- [] 2-3: _Internet - Understanding how it works_
+- [x] 2-1: _What is it and what is it for? _
+- [x] 2-2: _Understanding Commands_
+- [x] 2-3: _Internet - Understanding how it works_
 
 ##### Block 3: Introduction - HTML & CSS
 
-- [] 3-1: _HTML & CSS - Page Structures_
+- [x] 3-1: _HTML & CSS - Page Structures_
 - [] 3-2: _HTML & CSS - Getting Started with CSS_
 - [] 3-3: _HTML & CSS - Selectors and Positioning_
 - [] 3-4: _Semantic HTML_
