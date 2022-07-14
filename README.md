@@ -1,6 +1,6 @@
 # Trybe
 
-This repository contains all the learning activities developed by _ [[Victoria Teixeira] (https://www.linkedin.com/in/victoriafteixeira/?locale=en_US) _ while studying at [Trybe] (https://www.betrybe.com/): rocket:
+This repository contains all the learning activities developed by _[Victoria Teixeira] (https://www.linkedin.com/in/victoriafteixeira/?locale=en_US)_ while studying at _[Trybe] (https://www.betrybe.com/)_: rocket:
 
 _ "Trybe is a school of the future for anyone who wants to improve their life and build a successful career in technology, where the person only pays when they get a good job." _
 
@@ -10,18 +10,18 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 ##### Block 1: Introduction - Unix & Shell
 
-- [] 1-3: _Unix & Shell- Part 1_
-- [] 1-4: _Unix & Shell- Part 2_
+- [x] 1-3: _Unix & Shell- Part 1_
+- [x] 1-4: _Unix & Shell- Part 2_
 
 ##### Block 2: Git & GitHub
 
-- [] 2-1: _What is it and what is it for? _
-- [] 2-2: _Understanding Commands_
-- [] 2-3: _Internet - Understanding how it works_
+- [x] 2-1: _What is it and what is it for? _
+- [x] 2-2: _Understanding Commands_
+- [x] 2-3: _Internet - Understanding how it works_
 
 ##### Block 3: Introduction - HTML & CSS
 
-- [] 3-1: _HTML & CSS - Page Structures_
+- [x] 3-1: _HTML & CSS - Page Structures_
 - [] 3-2: _HTML & CSS - Getting Started with CSS_
 - [] 3-3: _HTML & CSS - Selectors and Positioning_
 - [] 3-4: _Semantic HTML_
