@@ -1,12 +1,13 @@
 # Trybe
 
-This repository contains all the learning activities developed by _[Victoria Teixeira] (https://www.linkedin.com/in/victoriafteixeira/?locale=en_US)_ while studying at _[Trybe] (https://www.betrybe.com/)_: rocket:
+This repository contains all the learning activities developed by _[Victoria Teixeira](https://www.linkedin.com/in/victoriafteixeira/?locale=en_US)_ while studying at _[Trybe](https://www.betrybe.com/)_ :rocket:
 
-_ "Trybe is a school of the future for anyone who wants to improve their life and build a successful career in technology, where the person only pays when they get a good job." _
+
+_"Trybe is a school of the future for anyone who wants to improve their life and build a successful career in technology, where the person only pays when they get a good job."_
 
 The program has more than 1,500 hours of face-to-face and online classrooms, addresses introduction to software development, front-end, back-end, computer science, software engineering, advanced methodologies and behavioral skills.
 
-## Fundamentals of Web Development: white_check_mark:
+## Fundamentals of Web Development :hourglass_flowing_sand:
 
 ##### Block 1: Introduction - Unix & Shell
 
