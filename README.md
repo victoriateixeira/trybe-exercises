@@ -1,6 +1,5 @@
 # Trybe
 
-
 This repository contains all the learning activities developed by _[Victoria Teixeira](https://www.linkedin.com/in/victoriafteixeira/?locale=en_US)_ while studying at _[Trybe](https://www.betrybe.com/)_ :rocket:
 
 
