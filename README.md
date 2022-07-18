@@ -1,5 +1,13 @@
 # Trybe
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+This repository contains all the learning activities developed by _[Victoria Teixeira] (https://www.linkedin.com/in/victoriafteixeira/?locale=en_US)_ while studying at _[Trybe] (https://www.betrybe.com/)_: rocket:
+=======
+>>>>>>> 3336fcf1e63651038bf3308660b55077747fe5ae
+
+=======
+>>>>>>> ea8cf8340c589b1c15d84341b44ec37050618de3
 This repository contains all the learning activities developed by _[Victoria Teixeira](https://www.linkedin.com/in/victoriafteixeira/?locale=en_US)_ while studying at _[Trybe](https://www.betrybe.com/)_ :rocket:
 
 
