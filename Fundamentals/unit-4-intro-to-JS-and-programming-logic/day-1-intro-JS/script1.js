@@ -74,23 +74,52 @@
 // else {console.log(isTriangle)}
 
 // Programa 6
-let peca = "dama";
-peca = peca.toLowerCase();
+// let peca = "dama";
+// peca = peca.toLowerCase();
 
-switch(peca) {
+// switch(peca) {
     
-    case "rei": console.log ("uma casa em qualquer direção");
-    break 
-    case "rainha": console.log ("incontáveis casas em qualquer direção");
-    break
-    case "torre": console.log ("linha reta");
-    break
-    case "bispo": console.log ("diagonal");
-    break
-    case "cavalo": console.log ("em L");
-    break
-    case "peao": console.log ("uma casa para frente");
-    break
-    case "peão": console.log ("uma casa para frente");
-    default: console.log("Peça inválida");
-}
+//     case "rei": console.log ("uma casa em qualquer direção");
+//     break 
+//     case "rainha": console.log ("incontáveis casas em qualquer direção");
+//     break
+//     case "torre": console.log ("linha reta");
+//     break
+//     case "bispo": console.log ("diagonal");
+//     break
+//     case "cavalo": console.log ("em L");
+//     break
+//     case "peao": console.log ("uma casa para frente");
+//     break
+//     case "peão": console.log ("uma casa para frente");
+//     default: console.log("Peça inválida");
+// }
+
+// Programa 7
+
+let  percentScore = 110;
+
+
+    if (percentScore>=90 && percentScore<=100){
+         console.log("A");
+    }
+    else if (percentScore>=80 && percentScore<90) {
+        console.log("B");
+    }
+    else if (percentScore>=70 && percentScore<80) {
+        console.log("C");
+    }
+    else if  (percentScore>=60 && percentScore<70) {
+        console.log("D");
+    }
+    else if (percentScore>=50 && percentScore<60) {
+        console.log("E");
+    }
+    else if (percentScore>=0 && percentScore<50) {
+        console.log("F");
+    }
+    else {
+        console.log ("Nota inválida");
+
+    }
+  
