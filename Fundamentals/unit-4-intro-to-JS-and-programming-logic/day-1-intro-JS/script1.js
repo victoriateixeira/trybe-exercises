@@ -165,9 +165,49 @@
 
 //Projeto 10
 
-let buy = 30;
-let sell = 60;
-let buyGross = buy+0.2*buy
-let profit = sell - buyGross
-console.log (profit);
+// let buy = 30;
+// let sell = 60;
+// let buyGross = buy+0.2*buy
+// let profit = sell - buyGross
+// console.log (profit);
 
+// Projeto 11
+
+let salarioBruto = 6000;
+let inss='';
+let ir ='';
+
+if (salarioBruto <= 1556.94){
+    inss=.08*salarioBruto
+}
+else if (1556.94<salarioBruto && salarioBruto<= 2594.92){
+    inss=.09*salarioBruto
+}
+else if (2594.92< salarioBruto && salarioBruto<= 5189.82){
+    inss=.11*salarioBruto
+}
+else {
+    inss=570.88
+}
+
+
+let salarioBase = salarioBruto-inss;
+
+if (salarioBase<= 1903.98) {
+    ir=0
+}
+else if (1903.99<salarioBase && salarioBase<=2826.65) {
+    ir=0.075*salarioBase-142.8;
+}
+else if (2826.65<salarioBase && salarioBase<=3751.05) {
+    ir=0.15*salarioBase-354.8;
+}
+else if (3751.05<salarioBase && salarioBase<=4664.68) {
+    ir=0.225*salarioBase-636.13;
+}
+else  {
+    ir=0.275*salarioBase-869.36;
+}
+
+let salarioLiquido = salarioBase-ir;
+console.log (salarioLiquido.toFixed(2));
