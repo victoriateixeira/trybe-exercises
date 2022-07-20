@@ -144,21 +144,30 @@
 // }
 
 //Projeto 9
-const o = 12;
-const p = 7;
-const q = 63;
+// const o = 12;
+// const p = 7;
+// const q = 63;
 
-isOdd = o%2!==0 || p%2!==0 || q%2!==0;
-console.log(isOdd);
+// isOdd = o%2!==0 || p%2!==0 || q%2!==0;
+// console.log(isOdd);
 
-//ou 
-const o = 12;
-const p = 8;
-const q = 60;
+// //ou 
+// const o = 12;
+// const p = 8;
+// const q = 60;
 
-if (o%2!==0 || p%2!==0 || q%2!==0) {
-    console.log("true")
-}
-else { 
-    console.log ("false")
-}
+// if (o%2!==0 || p%2!==0 || q%2!==0) {
+//     console.log("true")
+// }
+// else { 
+//     console.log ("false")
+// }
+
+//Projeto 10
+
+let buy = 30;
+let sell = 60;
+let buyGross = buy+0.2*buy
+let profit = sell - buyGross
+console.log (profit);
+
