@@ -97,29 +97,48 @@
 
 // Programa 7
 
-let  percentScore = 110;
+// let  percentScore = 110;
 
 
-    if (percentScore>=90 && percentScore<=100){
-         console.log("A");
-    }
-    else if (percentScore>=80 && percentScore<90) {
-        console.log("B");
-    }
-    else if (percentScore>=70 && percentScore<80) {
-        console.log("C");
-    }
-    else if  (percentScore>=60 && percentScore<70) {
-        console.log("D");
-    }
-    else if (percentScore>=50 && percentScore<60) {
-        console.log("E");
-    }
-    else if (percentScore>=0 && percentScore<50) {
-        console.log("F");
-    }
-    else {
-        console.log ("Nota inválida");
+//     if (percentScore>=90 && percentScore<=100){
+//          console.log("A");
+//     }
+//     else if (percentScore>=80 && percentScore<90) {
+//         console.log("B");
+//     }
+//     else if (percentScore>=70 && percentScore<80) {
+//         console.log("C");
+//     }
+//     else if  (percentScore>=60 && percentScore<70) {
+//         console.log("D");
+//     }
+//     else if (percentScore>=50 && percentScore<60) {
+//         console.log("E");
+//     }
+//     else if (percentScore>=0 && percentScore<50) {
+//         console.log("F");
+//     }
+//     else {
+//         console.log ("Nota inválida");
 
-    }
+//     }
   
+// Programa 8
+const l = 11;
+const m = 8;
+const n = 69;
+
+isEven = l%2===0 || m%2===0 || n%2===0;
+console.log(isEven);
+
+//ou 
+const l = 11;
+const m = 8;
+const n = 69;
+
+if (l%2===0 || m%2===0 || n%2===0) {
+    console.log("true")
+}
+else { 
+    console.log ("false")
+}
