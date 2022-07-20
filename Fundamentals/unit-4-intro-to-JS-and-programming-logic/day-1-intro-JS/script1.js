@@ -124,19 +124,39 @@
 //     }
   
 // Programa 8
-const l = 11;
-const m = 8;
-const n = 69;
+// const l = 11;
+// const m = 8;
+// const n = 69;
 
-isEven = l%2===0 || m%2===0 || n%2===0;
-console.log(isEven);
+// isEven = l%2===0 || m%2===0 || n%2===0;
+// console.log(isEven);
+
+// //ou 
+// const l = 11;
+// const m = 8;
+// const n = 69;
+
+// if (l%2===0 || m%2===0 || n%2===0) {
+//     console.log("true")
+// }
+// else { 
+//     console.log ("false")
+// }
+
+//Projeto 9
+const o = 12;
+const p = 7;
+const q = 63;
+
+isOdd = o%2!==0 || p%2!==0 || q%2!==0;
+console.log(isOdd);
 
 //ou 
-const l = 11;
-const m = 8;
-const n = 69;
+const o = 12;
+const p = 8;
+const q = 60;
 
-if (l%2===0 || m%2===0 || n%2===0) {
+if (o%2!==0 || p%2!==0 || q%2!==0) {
     console.log("true")
 }
 else { 
