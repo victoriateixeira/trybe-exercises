@@ -33,3 +33,21 @@ let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
 
 menu.push('Contato');
 console.log(menu);
+
+//FOR
+
+//Exemplo 1
+let numero = 7;
+let tabuada =[];
+for (index=1; index<=9;index++) {
+    tabuada.push(numero*index)
+}
+console.log (tabuada);
+
+//Exemplo 2
+let listaDeNomes = ['Joana','Maria','Laura'];
+for (let index=0;index<listaDeNomes.length;index++) {
+    var mensagem = `Boas vindas ${listaDeNomes[index]}!`;
+    console.log(mensagem);
+};
+    
