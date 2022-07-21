@@ -52,19 +52,32 @@
 // console.log(higherNumber);
 
 //Exercício 6
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let oddNumbersCount=0;
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let oddNumbersCount=0;
 
-for(index=0; index<numbers.length;index+=1) {
-    if (numbers[index]%2 !== 0){
-        oddNumbersCount+=1;
-    }
-}
-if (oddNumbersCount === 0) {
-    console.log ("nenhum valor ímpar encontrado")
+// for(index=0; index<numbers.length;index+=1) {
+//     if (numbers[index]%2 !== 0){
+//         oddNumbersCount+=1;
+//     }
+// }
+// if (oddNumbersCount === 0) {
+//     console.log ("nenhum valor ímpar encontrado")
     
-}
-    else {
-        console.log(oddNumbersCount);
+// }
+//     else {
+//         console.log(oddNumbersCount);
+//     }
 
-    }
+
+//Exercício 7
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+let lowerNumber = numbers[0];
+
+for (let index=1; index<numbers.length;index+=1) {
+
+if (numbers[index]<lowerNumber) {
+    lowerNumber = numbers[index];
+}
+}
+console.log(lowerNumber);
