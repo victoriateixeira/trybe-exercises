@@ -84,8 +84,22 @@
 
 
 //Exercício 8
+// let array = [];
+// for (index=1; index<=25;index+=1) {
+//     array.push(index);
+// }
+// console.log(array);
+
+// Exercício 9
+
 let array = [];
 for (index=1; index<=25;index+=1) {
     array.push(index);
 }
 console.log(array);
+
+let arrayHalf = [];
+for(index=0;index<array.length;index+=1) {
+    arrayHalf.push(array[index]/2);
+}
+console.log(arrayHalf);
