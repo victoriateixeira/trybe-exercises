@@ -39,7 +39,7 @@ console.log(menu);
 //Exemplo 1
 let numero = 7;
 let tabuada =[];
-for (index=1; index<=9;index++) {
+for (let index=1; index<=9;index++) {
     tabuada.push(numero*index)
 }
 console.log (tabuada);
@@ -47,7 +47,24 @@ console.log (tabuada);
 //Exemplo 2
 let listaDeNomes = ['Joana','Maria','Laura'];
 for (let index=0;index<listaDeNomes.length;index++) {
-    var mensagem = `Boas vindas ${listaDeNomes[index]}!`;
+    let mensagem = `Boas vindas ${listaDeNomes[index]}!`;
     console.log(mensagem);
 };
-    
+
+//Exercício 1
+let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+
+for (let index=0;index<groceryList.length;index+=1){
+    console.log(groceryList[index]);
+}
+
+//FOR/OF
+
+//Exercício 1
+let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+for(let name of names) {
+    console.log(name);
+
+}
+let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+console.log (names.entries());
