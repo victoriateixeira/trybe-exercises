@@ -123,17 +123,38 @@
 // console.log (numbers);
 
 //Exercício bonus 2
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-for ( let n=0;n<numbers.length-1;n+=1) {
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// for ( let n=0;n<numbers.length-1;n+=1) {
    
-for (let index = 1+n; index < numbers.length; index += 1) {
-    for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
-      if (numbers[index] > numbers[secondIndex]) {
-        let position = numbers[index];
-        numbers[index] = numbers[secondIndex];
-        numbers[secondIndex] = position;
-      }
+// for (let index = 1+n; index < numbers.length; index += 1) {
+//     for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+//       if (numbers[index] > numbers[secondIndex]) {
+//         let position = numbers[index];
+//         numbers[index] = numbers[secondIndex];
+//         numbers[secondIndex] = position;
+//       }
+//     }
+//   }
+// // }
+// // console.log (numbers);
+
+// //Exercício bonus 3
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbersMultiplied =[];
+   
+for (let index = 0; index < numbers.length; index += 1) {
+       
+        if (numbers[index]=== numbers[numbers.length-1]){
+            let multiplication = numbers[index]*2;
+            
+            numbersMultiplied.push(multiplication);
+        }
+        else {
+            let multiplication = numbers[index]*numbers[index+1];
+            numbersMultiplied.push(multiplication);
+        }
+
     }
-  }
-}
-console.log (numbers);
+
+console.log (numbersMultiplied);
