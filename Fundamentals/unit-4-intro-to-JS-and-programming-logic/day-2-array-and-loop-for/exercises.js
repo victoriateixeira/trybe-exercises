@@ -92,14 +92,48 @@
 
 // Exercício 9
 
-let array = [];
-for (index=1; index<=25;index+=1) {
-    array.push(index);
-}
-console.log(array);
+// let array = [];
+// for (index=1; index<=25;index+=1) {
+//     array.push(index);
+// }
+// console.log(array);
 
-let arrayHalf = [];
-for(index=0;index<array.length;index+=1) {
-    arrayHalf.push(array[index]/2);
+// let arrayHalf = [];
+// for(index=0;index<array.length;index+=1) {
+//     arrayHalf.push(array[index]/2);
+// }
+// console.log(arrayHalf);
+
+//BONUS
+
+//Exercício bonus 1
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// for ( let n=0;n<numbers.length-1;n+=1) {
+//     let sizeOfNumbers = numbers.length-n
+// for (let index = 1; index < sizeOfNumbers; index += 1) {
+//     for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+//       if (numbers[index] < numbers[secondIndex]) {
+//         let position = numbers[index];
+//         numbers[index] = numbers[secondIndex];
+//         numbers[secondIndex] = position;
+//       }
+//     }
+//   }
+// }
+// console.log (numbers);
+
+//Exercício bonus 2
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for ( let n=0;n<numbers.length-1;n+=1) {
+   
+for (let index = 1+n; index < numbers.length; index += 1) {
+    for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+      if (numbers[index] > numbers[secondIndex]) {
+        let position = numbers[index];
+        numbers[index] = numbers[secondIndex];
+        numbers[secondIndex] = position;
+      }
+    }
+  }
 }
-console.log(arrayHalf);
+console.log (numbers);
