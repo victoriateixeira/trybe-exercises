@@ -45,13 +45,37 @@
 // console.log (longestWord);
 
 
-let words = ['java', 'javascript', 'python', 'html', 'css'];
+// let words = ['java', 'javascript', 'python', 'html', 'css'];
 
-let shortestWord= words[0];
+// let shortestWord= words[0];
 
-for (i=1;i<words.length;i+=1) {
-    if (words[i].length<shortestWord.length) {
-        shortestWord = words[i];
+// for (i=1;i<words.length;i+=1) {
+//     if (words[i].length<shortestWord.length) {
+//         shortestWord = words[i];
+//     }
+// }
+// console.log (shortestWord);
+
+//Exercício 4
+
+let highestPrimeNumber=2;
+let amountOfDivisors = 0;
+
+
+for (i=3; i<=50;i+=1) {
+    for (j=2;j<i;j+=1) {
+        if (i%j===0 ) {
+amountOfDivisors+=1;
+        }
+    }
+if (amountOfDivisors!==0){
+    amountOfDivisors=0;
+}
+else {
+       if (i>highestPrimeNumber) {
+            highestPrimeNumber = i;
+        }
     }
 }
-console.log (shortestWord);
+
+console.log (highestPrimeNumber);
