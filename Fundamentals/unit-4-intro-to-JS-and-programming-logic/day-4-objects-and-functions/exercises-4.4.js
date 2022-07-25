@@ -121,19 +121,37 @@
 //     console.log (isPalindrome("abacaxi"));
 
 //Exercício 2
-let testArray = [2, 3, 6, 7, 10, 10];
-function largestNumberIndex (array) {
-    let largestIndex;
+// let testArray = [2, 3, 6, 7, 10, 10];
+// function largestNumberIndex (array) {
+//     let largestIndex;
+//     for (let index = 0;index<array.length;index +=1) {
+//         for (let index2 = 0;index2<array.length;index2 +=1) {
+//             if (array[index]<array[index2]){
+//                 break;
+//             }
+//             else {
+//                largestIndex = index;
+//             }
+//         }
+//     } 
+//     return largestIndex;
+// }
+// console.log(largestNumberIndex(testArray));
+
+//Exercício 3
+let testArray = [2, 4, 6, 7, -10, 0, -3];
+function smallestNumberIndex (array) {
+    let smallestIndex;
     for (let index = 0;index<array.length;index +=1) {
         for (let index2 = 0;index2<array.length;index2 +=1) {
-            if (array[index]<array[index2]){
+            if (array[index]>array[index2]){
                 break;
             }
             else {
-               largestIndex = index;
+               smallestIndex = index;
             }
         }
     } 
-    return largestIndex;
+    return smallestIndex;
 }
-console.log(largestNumberIndex(testArray));
+console.log(smallestNumberIndex(testArray));
