@@ -104,18 +104,36 @@
 //FUNÇÕES
 
 //Exercício 1
-function isPalindrome (word) {
-    let arrayWord = Array.from(word);
-    let arrayWordInverse = arrayWord.reverse();
-    let inverseWord = arrayWordInverse.join('');
-    if (word===inverseWord) {
-        return true;
-    }
-    else {
-        return false;
-    }
+// function isPalindrome (word) {
+//     let arrayWord = Array.from(word);
+//     let arrayWordInverse = arrayWord.reverse();
+//     let inverseWord = arrayWordInverse.join('');
+//     if (word===inverseWord) {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
 
-    }
+//     }
 
-    console.log(isPalindrome("arara"));
-    console.log (isPalindrome("abacaxi"));
+//     console.log(isPalindrome("arara"));
+//     console.log (isPalindrome("abacaxi"));
+
+//Exercício 2
+let testArray = [2, 3, 6, 7, 10, 10];
+function largestNumberIndex (array) {
+    let largestIndex;
+    for (let index = 0;index<array.length;index +=1) {
+        for (let index2 = 0;index2<array.length;index2 +=1) {
+            if (array[index]<array[index2]){
+                break;
+            }
+            else {
+               largestIndex = index;
+            }
+        }
+    } 
+    return largestIndex;
+}
+console.log(largestNumberIndex(testArray));
