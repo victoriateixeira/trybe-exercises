@@ -121,37 +121,40 @@
 //     console.log (isPalindrome("abacaxi"));
 
 //Exercício 2
-// let testArray = [2, 3, 6, 7, 10, 10];
+// let testArray = [20, 2, 61, 75, 104, 13];
 // function largestNumberIndex (array) {
-//     let largestIndex;
+//     let largestIndex=0;
 //     for (let index = 0;index<array.length;index +=1) {
-//         for (let index2 = 0;index2<array.length;index2 +=1) {
-//             if (array[index]<array[index2]){
-//                 break;
-//             }
-//             else {
-//                largestIndex = index;
-//             }
+//         if (array[index]>array[largestIndex]) {
+//             largestIndex = index;
 //         }
-//     } 
-//     return largestIndex;
+// }
+// return largestIndex;
 // }
 // console.log(largestNumberIndex(testArray));
 
-//Exercício 3
-let testArray = [2, 4, 6, 7, -10, 0, -3];
-function smallestNumberIndex (array) {
-    let smallestIndex;
+ //Exercício 3
+// let testArray = [2, 4, 6, 7, -10, 0, 3];
+// function smallestNumberIndex (array) {
+//     let smallestIndex=0;
+//     for (let index = 0;index<array.length;index +=1) {
+//     if (array[index]<array[smallestIndex]){
+//         smallestIndex = index;
+//     }
+// }
+// return smallestIndex;
+// }
+// console.log(smallestNumberIndex(testArray));
+
+//Exercício 4
+let testArray = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+function findLargestString(array) {
+    let largestString =array[0];
     for (let index = 0;index<array.length;index +=1) {
-        for (let index2 = 0;index2<array.length;index2 +=1) {
-            if (array[index]>array[index2]){
-                break;
-            }
-            else {
-               smallestIndex = index;
-            }
-        }
-    } 
-    return smallestIndex;
+    if (array[index].length>largestString.length){
+        largestString = array[index];
+    }
 }
-console.log(smallestNumberIndex(testArray));
+return largestString;
+}
+console.log(findLargestString(testArray));
