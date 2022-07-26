@@ -195,14 +195,47 @@
 
 //Exercício 7
 
-function verifiesStringEnding (stringWord, stringEnding) {
-    let stringEndingSize = stringEnding.length;
-    let stringWordEnding = stringWord.slice (-stringEndingSize);
-    if (stringWordEnding === stringEnding) {
-        return true;
-    }
-    else {
-        return false;
+// function verifiesStringEnding (stringWord, stringEnding) {
+//     let stringEndingSize = stringEnding.length;
+//     let stringWordEnding = stringWord.slice (-stringEndingSize);
+//     if (stringWordEnding === stringEnding) {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// }
+// console.log (verifiesStringEnding('victoria', 'toria'));
+
+//BONUS
+
+// let romanNumbers = {
+//     I : 1,
+//     V : 5,
+//     X : 10,
+//     L : 50,
+//     C : 100,
+//     D : 500,
+//     M : 1000,
+// }
+
+// function transformsNumbers (romanNumber) {
+//     if 
+// }
+
+//Exercício bonus 2
+let vector = [[1, 2], [3,4,5,6], [7,8,9,10]];
+let evenNumbers =[];
+
+function findsEvenNumbers (array) {
+    for (index=0; index < array.length;index +=1) {
+        let subArray = array[index];
+        for (index2=0;index2<subArray.length;index2+=1) {
+        if (subArray[index2] %2===0) {
+            evenNumbers.push(subArray[index2]);
+        }
     }
 }
-console.log (verifiesStringEnding('victoria', 'toria'));
+    return evenNumbers;
+}
+console.log (findsEvenNumbers(vector));
