@@ -184,11 +184,25 @@
 // console.log (findsMostRepeatedNumber(testArray));
 
 //Exercício 6
-let sum=0;
-function sumsNumbersUntilN(number) {
-    for (n=number; n>0;n-=1) {
-        sum +=n;
+// let sum=0;
+// function sumsNumbersUntilN(number) {
+//     for (n=number; n>0;n-=1) {
+//         sum +=n;
+//     }
+//     return sum;
+// }
+// console.log(sumsNumbersUntilN(10));
+
+//Exercício 7
+
+function verifiesStringEnding (stringWord, stringEnding) {
+    let stringEndingSize = stringEnding.length;
+    let stringWordEnding = stringWord.slice (-stringEndingSize);
+    if (stringWordEnding === stringEnding) {
+        return true;
     }
-    return sum;
+    else {
+        return false;
+    }
 }
-console.log(sumsNumbersUntilN(10));
+console.log (verifiesStringEnding('victoria', 'toria'));
