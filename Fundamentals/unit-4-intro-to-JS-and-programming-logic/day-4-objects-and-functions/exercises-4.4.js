@@ -147,14 +147,38 @@
 // console.log(smallestNumberIndex(testArray));
 
 //Exercício 4
-let testArray = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
-function findLargestString(array) {
-    let largestString =array[0];
-    for (let index = 0;index<array.length;index +=1) {
-    if (array[index].length>largestString.length){
-        largestString = array[index];
+// let testArray = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+// function findLargestString(array) {
+//     let largestString =array[0];
+//     for (let index = 0;index<array.length;index +=1) {
+//     if (array[index].length>largestString.length){
+//         largestString = array[index];
+//     }
+// }
+// return largestString;
+// }
+// console.log(findLargestString(testArray));
+
+//Exercício 5
+let testArray = [2, 3, 2, 5, 8, 2, 3, 6, 6, 6, 6,7,7,7,7,7,3,3,3,3,3,3];
+let count=0;
+let timesRepeated = 0;
+let mostRepeatedNumber=0;
+function findsMostRepeatedNumber (array) {
+    for (index=0;index<array.length;index+=1) {
+        for (index2=0;index2<array.length;index2+=1) {
+            if (array[index]=== array[index2]){
+                count+=1;
+            
+            if (count>timesRepeated){
+                timesRepeated = count;
+                mostRepeatedNumber=array[index];
+            }
+        }
+        
+        }
+        count=0;
     }
+    return mostRepeatedNumber;
 }
-return largestString;
-}
-console.log(findLargestString(testArray));
+console.log (findsMostRepeatedNumber(testArray));
