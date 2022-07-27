@@ -224,18 +224,64 @@
 // }
 
 //Exercício bonus 2
-let vector = [[1, 2], [3,4,5,6], [7,8,9,10]];
-let evenNumbers =[];
+// let vector = [[1, 2], [3,4,5,6], [7,8,9,10]];
+// let evenNumbers =[];
 
-function findsEvenNumbers (array) {
-    for (index=0; index < array.length;index +=1) {
-        let subArray = array[index];
-        for (index2=0;index2<subArray.length;index2+=1) {
-        if (subArray[index2] %2===0) {
-            evenNumbers.push(subArray[index2]);
+// function findsEvenNumbers (array) {
+//     for (index=0; index < array.length;index +=1) {
+//         let subArray = array[index];
+//         for (index2=0;index2<subArray.length;index2+=1) {
+//         if (subArray[index2] %2===0) {
+//             evenNumbers.push(subArray[index2]);
+//         }
+//     }
+// }
+//     return evenNumbers;
+// }
+// console.log (findsEvenNumbers(vector));
+
+//Exercício bonus 3
+const basket = [
+    'Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva', 'Laranja',
+    'Jaca', 'Pera', 'Melancia', 'Uva', 'Laranja', 'Melancia',
+    'Banana', 'Uva', 'Pera', 'Abacate', 'Laranja', 'Abacate',
+    'Banana', 'Melancia', 'Laranja', 'Laranja', 'Jaca', 'Uva',
+    'Banana', 'Uva', 'Laranja', 'Pera', 'Melancia', 'Uva',
+    'Jaca', 'Banana', 'Pera', 'Abacate', 'Melancia', 'Melancia',
+    'Laranja', 'Pera', 'Banana', 'Jaca', 'Laranja', 'Melancia',
+    'Abacate', 'Abacate', 'Pera', 'Melancia', 'Banana', 'Banana',
+    'Abacate', 'Uva', 'Laranja', 'Banana', 'Abacate', 'Uva',
+    'Uva', 'Abacate', 'Abacate', 'Melancia', 'Uva', 'Jaca',
+    'Uva', 'Banana', 'Abacate', 'Banana', 'Uva', 'Banana',
+    'Laranja', 'Laranja', 'Jaca', 'Jaca', 'Abacate', 'Jaca',
+    'Laranja', 'Melancia', 'Pera', 'Jaca', 'Melancia', 'Uva',
+    'Abacate', 'Jaca', 'Jaca', 'Abacate', 'Uva', 'Laranja',
+    'Pera', 'Melancia', 'Jaca', 'Pera', 'Laranja', 'Jaca',
+    'Pera', 'Melancia', 'Jaca', 'Banana', 'Laranja', 'Jaca',
+    'Banana', 'Pera', 'Abacate', 'Uva',
+  ];
+
+  function countsFruit (basket) {
+    let count =0;
+    let fruitObject={};
+   
+    for (fruit of basket){
+      for (let index=0; index<basket.length; index+=1) {
+        if (fruit === basket[index]){
+          count+=1;
         }
+        fruitObject[fruit] = count;
+      }
+      count=0;
     }
+    let fullPrint=[];
+    for (let key in fruitObject) {
+let print = `${fruitObject[key]} ${key}`;
+if (fruitObject[key]>1){ print+='s';}
+fullPrint.push(print);
 }
-    return evenNumbers;
-}
-console.log (findsEvenNumbers(vector));
+     let message = `Sua cesta possui: ${fullPrint.join(', ')}.`;
+    
+   return message;
+  }
+  console.log(countsFruit(basket));
