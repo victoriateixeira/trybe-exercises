@@ -112,9 +112,31 @@
      for (let i=1; i<=3; i+=1) {
         let h3 = document.createElement('h3');
         h3.innerHTML = 'H3 número ', [index];
+        h3.className = 'description';
         main.appendChild(h3);
      }
      
+     // Adicione a classe title na tag h1 criada;
+     h1 = document.querySelector('h1')[0];
+     h1.className = 'title';
+
+     //Remova a section criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild()
+     sectionLeft = document.querySelector('.left-content')[0];
+     main.removeChild(sectionLeft);
+
+    //Centralize a section criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto da section
+    sectionRight = document.querySelector('.right-content')[0];
+    sectionRight.style.marginRight='auto';
+
+    //Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde
+    centerContent = document.querySelector('.center-content')[0];
+    centerContent.parentElement.style.backgroundColor = "green";
+
+    //Remova os dois últimos elementos (nove e dez) da lista criada no passo 8
+    unorderedList = document.querySelector('.numbers-in-words')[0];
+    unorderedList.lastElementChild.remove();
+    unorderedList.lastElementChild.remove();
+   
 
      
      </script>
