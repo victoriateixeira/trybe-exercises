@@ -1,3 +1,4 @@
+
 function createDaysOfTheWeek() {
     const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
     const weekDaysList = document.querySelector('.week-days');
@@ -13,6 +14,8 @@ function createDaysOfTheWeek() {
   
   createDaysOfTheWeek();
   
+
+  //Exercise 1
   let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
   function createsDaysOfTheMonth() {
@@ -34,7 +37,7 @@ for (let i=0; i<decemberDaysList.length;i+=1) {
   }
   createsDaysOfTheMonth();
 
-
+//Exercise 2
   function createsHolidayButton (feriados) {
     let buttonContainer = document.querySelector(".buttons-container");
     let holidayButton = document.createElement('button');
@@ -45,6 +48,7 @@ for (let i=0; i<decemberDaysList.length;i+=1) {
   }
   createsHolidayButton("Feriados");
 
+  //Exercise 3
   function changesHolidaysColour () {
     let holidays = document.getElementsByClassName("holiday");
     for (i=0; i<holidays.length;i+=1) {
@@ -57,6 +61,29 @@ for (let i=0; i<decemberDaysList.length;i+=1) {
 }
   document.querySelector("#btn-holiday").addEventListener("click", changesHolidaysColour);
 
+//Exercise 4
+
+function createsFridayButton (friday) {
+    let buttonContainer = document.querySelector(".buttons-container");
+    let fridayButton = document.createElement('button');
+    fridayButton.id = "btn-friday";
+    fridayButton.innerHTML = friday;
+    buttonContainer.appendChild(fridayButton);
+
+  }
+  createsFridayButton("Sexta-Feira");
+
+  //exercise 5
+
+  function changesFridayText () {
+    let fridays = document.querySelectorAll(".friday");
+    for (i=0; i<fridays.length;i+=1){
+    fridays[i].innerHTML = "SEXTOU";
+    }
+  }
+  document.getElementById("btn-friday").addEventListener("click", changesFridayText);
+  
+  //Exercise 6
   function zoomsInDay (event) {
 
     event.target.style.fontSize = "30px";
@@ -74,3 +101,13 @@ for (let i=0; i<decemberDaysList.length;i+=1) {
   for (let i=0; i<daysOfMonth.length;i+=1){
     daysOfMonth[i].addEventListener("mouseout", zoomsOutDay);
     }
+
+    //Exercise 7
+
+function addsTask (task) {
+    let taskList = document.querySelector(".my-tasks");
+    let taskListItem = document.createElement('span');
+    taskListItem.innerHTML = task;
+    taskList.appendChild(taskListItem);
+}
+addsTask("Cozinhar");
