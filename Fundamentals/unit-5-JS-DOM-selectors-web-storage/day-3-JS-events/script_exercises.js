@@ -20,12 +20,12 @@ let listOfDays = document.querySelector("#days");
 for (let i=0; i<decemberDaysList.length;i+=1) {
     let dayOfMonth = decemberDaysList[i];
     let dayOfMonthListItem = document.createElement("li");
-    dayOfMonthListItem.classList.add = "day";
+    dayOfMonthListItem.classList.add ("day");
     if (dayOfMonth===24 || dayOfMonth === 25 || dayOfMonth ===31) {
-        dayOfMonthListItem.classList.add = 'holiday';
+        dayOfMonthListItem.classList.add('holiday');
     }
     if (dayOfMonth === 4 || dayOfMonth === 11 || dayOfMonth === 18 || dayOfMonth === 25 ){
-        dayOfMonthListItem.classList.add = 'friday';
+        dayOfMonthListItem.classList.add ('friday');
     }    
     dayOfMonthListItem.innerHTML = dayOfMonth;
 
@@ -33,3 +33,26 @@ for (let i=0; i<decemberDaysList.length;i+=1) {
 };
   }
   createsDaysOfTheMonth();
+
+
+  function createsHolidayButton (feriados) {
+    let buttonContainer = document.querySelector(".buttons-container");
+    let holidayButton = document.createElement('button');
+    holidayButton.id = "btn-holiday";
+    holidayButton.innerHTML = feriados;
+    buttonContainer.appendChild(holidayButton);
+
+  }
+  createsHolidayButton("Feriados");
+
+  function changesHolidaysColour () {
+    let holidays = document.getElementsByClassName("holiday");
+    for (i=0; i<holidays.length;i+=1) {
+       if (holidays[i].style.background === "rgb(47,193,140)"){
+        holidays[i].style.background = "rgb(238,238,238)";
+    }
+    else {holidays[i].style.background = "rgb(47,193,140)"
+    }
+  }
+}
+  document.querySelector("#btn-holiday").addEventListener("click", changesHolidaysColour);
