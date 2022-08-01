@@ -111,3 +111,13 @@ function addsTask (task) {
     taskList.appendChild(taskListItem);
 }
 addsTask("Cozinhar");
+
+//Exercise 8
+function addsColorLabel (color) {
+    let taskList = document.querySelector(".my-tasks");
+    let taskListColor = document.createElement('div');
+    taskListColor.classList.add('task');
+    taskListColor.style.backgroundColor = color;
+    taskList.appendChild(taskListColor);
+}
+addsColorLabel("yellow");
