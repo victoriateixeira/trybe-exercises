@@ -62,9 +62,6 @@ function altersColourYellow() {
 function altersColourWhite() {
     myTop3.style.color = 'white';
 }
-// function altersColourWhite() {
-//     myTop3.style.color = 'white';
-// }
 
 // Segue abaixo um exemplo do uso de event.target:
 
