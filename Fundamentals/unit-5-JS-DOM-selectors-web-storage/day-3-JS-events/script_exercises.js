@@ -56,3 +56,21 @@ for (let i=0; i<decemberDaysList.length;i+=1) {
   }
 }
   document.querySelector("#btn-holiday").addEventListener("click", changesHolidaysColour);
+
+  function zoomsInDay (event) {
+
+    event.target.style.fontSize = "30px";
+  }
+
+  function zoomsOutDay (event) {
+
+    event.target.style.fontSize = "20px";
+  }
+ let  daysOfMonth = document.querySelectorAll(".day");
+  
+  for (let i=0; i<daysOfMonth.length;i+=1){
+  daysOfMonth[i].addEventListener("mouseover", zoomsInDay);
+  }
+  for (let i=0; i<daysOfMonth.length;i+=1){
+    daysOfMonth[i].addEventListener("mouseout", zoomsOutDay);
+    }
