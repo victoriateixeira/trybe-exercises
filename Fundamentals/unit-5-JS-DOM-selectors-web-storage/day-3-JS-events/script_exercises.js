@@ -49,13 +49,13 @@ for (let i=0; i<decemberDaysList.length;i+=1) {
   createsHolidayButton("Feriados");
 
   //Exercise 3
-  function changesHolidaysColour () {
+  function changesHolidaysColour() {
     let holidays = document.getElementsByClassName("holiday");
     for (i=0; i<holidays.length;i+=1) {
-       if (holidays[i].style.background === "rgb(47,193,140)"){
-        holidays[i].style.background = "rgb(238,238,238)";
+       if (holidays[i].style.backgroundColor === "rgb(47,193,140)"){
+        holidays[i].style.backgroundColor = "rgb(238,238,238)";
     }
-    else {holidays[i].style.background = "rgb(47,193,140)"
+    else {holidays[i].style.background = "rgb(47,193,140)";
     }
   }
 }
@@ -121,3 +121,30 @@ function addsColorLabel (color) {
     taskList.appendChild(taskListColor);
 }
 addsColorLabel("yellow");
+
+//Exercise 9
+function selectsTask (event) {
+
+    // let activeTask = document.querySelector(".selected");
+    // activeTask.classList.remove("selected");
+    // event.target.classList.add ("selected");
+    if (event.target.classList.includes("selected")){
+        event.target.classList.remove("selected");
+    }
+    else {event.target.classList.add("selected");}
+}
+
+let tasks = document.getElementsByClassName("task");
+for (let j=0; j<tasks.length;j+=1) {
+    tasks[j].addEventListener('click', selectsTask);
+}
+
+//Exercise 10
+function changesDayColor(day) {
+    day.target.style.backgroundColor = document.querySelector(".selected").style.backgroundColor;
+}
+daysOfMonth = document.querySelectorAll(".day");
+  
+  for (let i=0; i<daysOfMonth.length;i+=1){
+  daysOfMonth[i].addEventListener("click", changesDayColor);
+  }
