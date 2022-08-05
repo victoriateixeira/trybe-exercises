@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #3C495B;
+        font-weight: lighter;
+    }
+   header,  form {
+        margin: 30px auto;
+     
+        width: 40%;
+    }
+    main {
+        border: 2px solid black;
+        padding: 0 20px 20px 0;
+    }
+    /* h1 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    } */
+    .form-section {
+        margin-top:20px;
+        padding-left: 20px;
+    }
+    #full-name {
+    
+        text-align: left;
+        margin-left: 10px;
+    }
+    #email {
+        text-align: left;
+        margin-left: 10px;
+    }
+    #option-1 {
+        font-size: 4px;
+    }
+    #long-text {
+        width: 70%;
+        resize: none;
+    }
+    #date {
+        text-align: left;
+        margin-left: 10px;
+    }
+    #concordo1, #concordo2 {
+        font-size: 9px;
+    }
+    #button-section {
+        margin-top: 30px;
+    }
+    button {
+        padding: 5px 30px;
+        border-radius: 8px;
+        border: 1px solid #3C495B ;
+    }
+
+
+
+</style>
+<body>
+    <header>
+    
+        <h1>TrybeTryp</h1>
+        <p>Preencha o formulário para concorrer!</p>
+    </header>
+    <form action="" id="trip-form">
+        <main>
+<div class="form-section">
+<label for="full-name">Nome<input type="text" name="name" id="full-name" minlength="10" maxlength="40" placeholder="e.g. John Smith" autocomplete="off"></label>
+</div>
+<div class="form-section">
+<label for="email">Email<input type="email" name="email" id="email" minlength="10" maxlength="50" placeholder="e.g. johnsmith@email.com"></label>
+</div>
+<div class="form-section">
+<label for="option-1"><input type="radio" name="options" id="option-1" class="options">Opção 1</label>
+<label for="option-2"><input type="radio" name="options" id="option-2" class="options">Opção 2</label>
+<label for="option-3"><input type="radio" name="options" id="option-3" class="options">Opção 3</label>
+<label for="option-4"><input type="radio" name="options" id="option-4" class="options">Opção 4</label>
+</div>
+<div class="form-section">
+<label for="long-text">
+    Espaço para digitar a resposta<textarea name="longtext" id="long-text" cols="30" rows="5" ></textarea>
+</label>
+</div>
+<div class="form-section">
+<label for="">Data<input type="date" placeholder="dd/mm/aa" name="date" id="date"></label>
+</div>
+<div class="form-section">
+<label for="concordo1"><input type="checkbox" name="concordo" id="concordo1">Concordo 1</label>
+<br>
+<label for="concordo2"><input type="checkbox" name="concordo" id="concordo2">Concordo 1</label>
+</div>
+
+</main>
+<div id="button-section">
+<label for="send-button">
+    <button type="submit" id="send-button">Enviar</button>
+</label>
+<label for="erase-button">
+    <button type="submit" id="erase-button">Apagar</button>
+</label>
+</div>
+    </form>
+    <script>
+        let eraseButtom = document.querySelector('#erase-button');
+        eraseButtom.addEventListener('click',
+    function(){
+        let form = document.getElementById('trip-form');
+        form.reset();
+
+    })
+    </script>
+</body>
+</html>
